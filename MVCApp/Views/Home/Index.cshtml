@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@section scripts
+{
+    <script>
+        $(function () {
+            ExecuteQueryCommand([{ "Name": "Ayaz", "Value": "A1" }, { "Name": "Ayaz", "Value": "A1" }], "ASD").then(function (data) {
+                alert(data);
+            });
+        })
+    </script>
+
+}
